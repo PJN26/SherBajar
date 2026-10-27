@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="border-top" style={{ backgroundColor: "rgb(251,251,251)" }}>
+    <footer className="border-top mt-5" style={{ backgroundColor: "rgb(251,251,251)" }}>
       <div className="container mt-5">
         <div className="row mt-5">
           <div className="col">
@@ -11,7 +11,7 @@ function Footer() {
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
           </div>
-          <div className="col">
+          <div className="col" style={{lineHeight: "1.8"}}>
             <p>Company</p>
             <a href="#" className="text-muted mt-5" style={{textDecoration: "none"}}>About</a>
             <br />
@@ -30,7 +30,7 @@ function Footer() {
             <a href="#" className="text-muted mt-5" style={{textDecoration: "none"}}>Zerodha cares (CSR)</a>
             <br />
           </div>
-          <div className="col">
+          <div className="col" style={{lineHeight: "1.8"}}>
             <p>Support</p>
             <a href="#" className="text-muted mt-5" style={{textDecoration: "none"}}>Contact</a>
             <br />
@@ -43,7 +43,7 @@ function Footer() {
             <a href="#" className="text-muted mt-5" style={{textDecoration: "none"}}>Downloads & resources</a>
             <br />
           </div>
-          <div className="col">
+          <div className="col" style={{lineHeight: "1.8"}}>
             <p>Account</p>
             <a href="#" className="text-muted mt-5" style={{textDecoration: "none"}}>Open an account</a>
             <br />
@@ -53,7 +53,7 @@ function Footer() {
             <br />
           </div>
         </div>
-        <div className="mt-5 text-muted" style={{ fontSize: "14px" }}>
+        <div className="mt-5 text-muted" style={{ fontSize: "14px", lineHeight: "1.8"}}>
           <p>
             Zerodha Broking Limited: Member of NSE, BSE, MCX & MSEI – SEBI
             Registration no.: INZ000031633 CDSL/NSDL: Depository services
