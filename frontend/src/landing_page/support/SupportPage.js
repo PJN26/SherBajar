@@ -5,7 +5,7 @@ import CreateTicket from './CreateTicket';
 function Support() {
     return ( <>
         <Hero />
-        <CreateTicket />
+        <CreateTicket/>
     </> );
 }
 
