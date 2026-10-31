@@ -11,18 +11,11 @@ const PORT = process.env.PORT || 8000;
 const uri = process.env.MONGO_URI;
 
 const connectDb = async (uri) => {
-    const conn = await mongoose.connect(uri);
-    console.log(`Mongo db connected on ${conn.connection.host}`);
-}
-
-const start = async () => {
-  await connectDb(uri);
-  app.listen(PORT, () => {
-    console.log(`app is listening on port ${PORT}`);
-  });
+  const conn = await mongoose.connect(uri);
+  console.log(`Mongo db connected on ${conn.connection.host}`);
 };
 
-start().catch((err) => {
-  console.log(err);
-  process.exit(1);
+app.listen(PORT, async () => {
+  await connectDb(uri);
+  console.log(`app is listening on PORT ${PORT}`);
 });
